@@ -3,65 +3,156 @@
 body{
     margin: 0;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
     
 
-}
-main {
-    display: flex;
-    align-items: stretch;
 }
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: rgb(106, 0, 255);
 }
 
-/*                         NAVBAR                            */
-nav{
+/*                         Main  avec exo grid                        */
+main {
+    margin: auto;
+    margin-top: 50px;
+    height: 500px;
+    width: 800px;
+    background-color: black;
+    border: 5px solid black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+/*                         couleur div                       */
+
+.colorWhite {
+    background-color: aliceblue;
+}
+.colorBlack {
+    background-color: black;
+}
+.colorBlue {
+    background-color: blue;
+}
+.colorYellow {
+    background-color: yellow;
+}
+.colorRed {
     background-color: red;
 }
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    display: flex;
+#blanc1 {
+     grid-area: 1 / 1 / 4 / 2; 
 }
-nav li {
-    justify-content: center;
-    flex: 1 0 auto;
-    border: 1px solid black;
+#blanc2 {
+    grid-area: 1 / 2 / 1 / 9; 
 }
-nav li a  {
-    color: rgb(57, 57, 57);
-    text-decoration: none;
-    align-content: stretch;
+#blanc3 {
+    grid-area: 1 / 9 / 1 / 17;
 }
-#pageActu {
-    color: rgb(23, 179, 33);
+#blanc4 {
+    grid-area : 1 / 17 / 10 / 18;
 }
-nav li a:hover {
-    background-color: rgb(0, 89, 255);
-    color: #890C99;
-    transition: 0.5s;
+#yellow1 {
+    grid-area: 1 / 18 / 10 / 19;
 }
-section {
-    display: flex;
-    
+#blue1 {
+    grid-area: 2 / 2 / 4 / 9;
+}
+#blanc5 {
+    grid-area:  2 / 9 / 4 / 12;
+}
+#blue2 {
+    grid-area: 2 / 12 / 4 / 17;
+}
+#black1 {
+    grid-area: 4 / 1 / 12  / 2;
+}
+#blanc6 {
+    grid-area: 4 / 2 / 12 / 4;
+}
+#black2 {
+    grid-area: 4 / 4 / 17 / 5;
+}
+#blanc7 {
+    grid-area: 4 / 5 / 10 / 8;
+}
+#blanc8 {
+    grid-area: 4 / 8 / 10 / 9;
+}
+#yellow2 {
+    grid-area: 4 / 9 / 10 / 12;
+}
+#red1 {
+    grid-area: 4 / 12 / 10 / 16;
+}
+#red2 {
+    grid-area: 4 / 16 / 10 / 17;
+}
+#yellow3 {
+    grid-area: 10 / 5 / 12 / 6;
+}
+#red3 {
+    grid-area: 10 / 6 / 12 / 9;
+}
+#blue3 {
+    grid-area: 10 / 9 / 12 / 12;
+}
+#blanc9 {
+    grid-area: 10 / 12 / 12 / 16;
+}
+#blanc10{
+    grid-area: 10 / 16 / 12 / 17;
+}
+#black3 {
+    grid-area: 10 / 17 / 12 / 19;
+}
+#blanc11 {
+    grid-area: 12 / 1 / 17 / 2;
+}
+#red4 {
+    grid-area: 12 / 2 / 17 / 4;
+}
+#yellow4 {
+    grid-area: 12 / 5 / 19 / 6;
+}
+#blanc12 {
+    grid-area: 12 / 6 / 16 / 11;
+}
+#blanc13 {
+    grid-area: 12 / 11 / 16 / 14;
+}
+#blue4 {
+    grid-area: 12 / 14 / 16 / 16;
+}
+#yellow5 {
+    grid-area: 12 / 16 / 16 / 17;
+}
+#blanc14 {
+    grid-area: 12 / 17 / 16 / 19;
+}
+#blanc15 {
+    grid-area: 17 / 1 / 19 / 5;
+}
+#red5 {
+    grid-area: 16 / 6 / 19 / 9;
+}
+#black4 {
+    grid-area: 16 / 9 / 19 / 14;
+}
+#blanc16 {
+    grid-area: 16 / 14 / 19 / 19;
 }
 
-article {
-    background-color: aqua;
-    padding: 5px;
-}
+
 /*                         Footer (en en fixed avec copyright)                             */
 footer {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
     background-color: rgba(0, 0, 0);
     color: #890C99;
 }
