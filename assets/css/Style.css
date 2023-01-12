@@ -43,6 +43,7 @@ main {
 .colorRed {
     background-color: red;
 }
+/*                          placement                        */
 #blanc1 {
      grid-area: 1 / 1 / 4 / 2; 
 }
